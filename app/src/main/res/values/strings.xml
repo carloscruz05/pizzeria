@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">VitoLugini</string>
+    <string name="mUsername">Nombre</string>
+    <string name="mPassword">Contraseña</string>
+    <string name="botonlogin">Ingresar</string>
+
+
+    <string name="bienbenida">Hola Estimado...
+        ¿Que te podemos llevar asta tu casa este dia?</string>
+    <string name="pizza">Pizzas</string>
+    <string name="bebidas">bebidas</string>
+    <string name="botonanterior">Regresar</string>
+
+
+    <string name="seleccionarpizza">Seleccione su Pizza</string>
+    <string name="peperoni">Pepperoni</string>
+    <string name="hawaiana">Hawaiana</string>
+    <string name="pastor">Pastor</string>
+
+    <string name="seleccionarbebida">Seleccione su Bebida</string>
+    <string name="cocacola">Coca-Cola</string>
+    <string name="botonan">Anterior</string>
+    <string name="cerveza">Cerveza</string>
+    <string name="jugo">Jugo Natural</string>
+
+    <string name="peperonicompra">Usted ha seleccionado la Pizza de Pepperoni</string>
+    <string name="precioPepperoni">El Precio es de $120.00 Pesos</string>
+    <string name="gracias">Gracias por usar la App VitoLuigini</string>
+
+    <string name="hawaianacompra">Usted ha seleccionado la Pizza de Hawaiana</string>
+    <string name="preciohawaiana">El Precio es de $100.00 Pesos</string>
+
+    <string name="pastorcompra">Usted ha seleccionado la Pizza de Pastor</string>
+    <string name="preciopastor">El Precio es de $150.00 Pesos</string>
+
+    <string name="cocacolacompra">Usted ha seleccionado Coca-Cola</string>
+    <string name="preciococacola">El Precio es de $12.00 Pesos</string>
+
+    <string name="cervezalacompra">Usted ha seleccionado Cerveza</string>
+    <string name="preciocerveza">El Precio es de $15.00 Pesos</string>
+
+    <string name="jugocompra">Usted ha seleccionado Jugo Natural</string>
+    <string name="preciojugo">El Precio es de $13.00 Pesos</string>
+</resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EF5C17"
+    android:background="@drawable/fondo01"
     tools:context=".MenuPB">
 
     <TextView
@@ -66,7 +66,7 @@
         android:layout_height="65dp"
         android:background="#F8C135"
         android:backgroundTint="#EFA15D"
-        android:text="@string/bienbenida"
+        android:text="Hola estimado cliente.¿que te podemos llevar hasta tu casa este dia?Por favor selecciona"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="16sp"

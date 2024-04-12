@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#63E8C9"
+    android:background="@drawable/fondob"
     tools:context=".MenuBebidas">
 
     <TextView

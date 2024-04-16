@@ -1,26 +1,49 @@
 package com.example.vitolugini;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText mUsername;
-    private EditText mPassword;
-    private Button mLoginButton;
+    private static final String USUARIO_VALIDO = "carlos";
+    private static final String CONTRASENA_VALIDA = "1234";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-    public void Ingresar(View view){
-        Intent ingresar=new Intent(this, MenuPB.class);
-        startActivity(ingresar);
+
+        final EditText editTextUsuario = findViewById(R.id.editTextUsuario);
+        final EditText editTextContrasena = findViewById(R.id.editTextContraseña);
+        Button buttonIniciarSesion = findViewById(R.id.buttonIniciarSesion);
+
+        buttonIniciarSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String usuario = editTextUsuario.getText().toString();
+                String contraseña = editTextContrasena.getText().toString();
+
+                if (!usuario.isEmpty() && !contraseña.isEmpty()) {
+                    if (usuario.equals(USUARIO_VALIDO) && contraseña.equals(CONTRASENA_VALIDA)) {
+                        Toast.makeText(MainActivity.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
+
+
+                        Intent intent = new Intent(MainActivity.this, MenuPB.class);
+                        intent.putExtra("usuario", usuario);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(MainActivity.this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(MainActivity.this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 }

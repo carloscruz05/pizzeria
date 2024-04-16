@@ -7,6 +7,19 @@
     android:background="@drawable/fondo01"
     tools:context=".MenuPB">
 
+
+    <TextView
+        android:id="@+id/textViewUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="352dp"
@@ -60,21 +73,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.628" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="337dp"
-        android:layout_height="65dp"
-        android:background="#F8C135"
-        android:backgroundTint="#EFA15D"
-        android:text="Hola estimado cliente.¿que te podemos llevar hasta tu casa este dia?Por favor selecciona"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.175" />
 
     <ImageView
         android:id="@+id/imageView3"
